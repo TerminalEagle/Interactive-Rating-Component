@@ -1,0 +1,16 @@
+@media (max-width: 25em) {
+  .section-provide-rating,
+  .section-display-rating {
+    width: 350px;
+
+    padding: 32px 24px;
+  }
+
+  .select-ratings {
+    gap: 16px;
+  }
+
+  .icon-credit-card {
+    padding: 0 68px;
+  }
+}

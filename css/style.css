@@ -1,0 +1,194 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --light-grey--dimmed: hsla(217, 12%, 63%, 0.1);
+  --medium-grey: hsla(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/*//////////////////////////////
+//////  GENERAL STYLES  ///////
+//////////////////////////////*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+  line-height: 1;
+  font-size: 0.9375rem;
+
+  display: grid;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.section--hidden {
+  display: none;
+}
+
+.heading-primary {
+  font-size: 1.7rem;
+  color: var(--white);
+
+  margin-bottom: 16px;
+}
+
+.rating,
+.btn {
+  cursor: pointer;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+/*/////////////////////////////////////
+//////  PROVIDE RATING SECTION  ///////
+/////////////////////////////////////*/
+
+.section-provide-rating,
+.section-display-rating {
+  background-color: var(--dark-blue);
+
+  /* MOST IMPORTANT ATTRIBUTE TO ACHIEVE PERFECT WIDTH */
+  max-width: min-content;
+  margin: 0 auto;
+
+  padding: 32px;
+  border-radius: 30px;
+}
+
+.provide-rating-text,
+.display-rating-text {
+  color: var(--medium-grey);
+  line-height: 1.5;
+
+  /* min-width: fit-content; */
+}
+
+.provide-rating-text {
+  margin-bottom: 24px;
+}
+
+.select-ratings {
+  display: flex;
+  gap: 24px;
+
+  margin-bottom: 24px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--medium-grey);
+  font-weight: 700;
+
+  height: 48px;
+  width: 48px;
+
+  background-color: var(--light-grey--dimmed);
+  /* padding: 8px; */
+  border-radius: 50%;
+}
+
+.rating:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rating--active {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.btn--submit-rating {
+  background-color: var(--orange);
+  color: var(--white);
+
+  width: 100%;
+
+  font-size: 1rem;
+  padding: 12px 0;
+
+  font-weight: 700;
+
+  border-radius: 100px;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.btn--submit-rating:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--medium-grey);
+  font-weight: 700;
+
+  height: 48px;
+  width: 48px;
+  background-color: var(--light-grey--dimmed);
+  /* padding: 8px; */
+  border-radius: 50%;
+
+  margin-bottom: 32px;
+}
+
+/*//////////////////////////////
+///// THANK YOU SECTION ////////
+//////////////////////////////*/
+
+.section-display-rating {
+  padding: 37px 31px;
+  text-align: center;
+}
+
+.icon-credit-card {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  padding: 0 88px;
+}
+
+.selected-rating-text {
+  display: flex;
+  margin: 0 auto;
+
+  width: max-content;
+  padding: 10px 16px 6px;
+  border-radius: 100px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--light-grey--dimmed);
+  color: var(--orange);
+
+  margin-bottom: 40px;
+}
+
+/*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+  */
