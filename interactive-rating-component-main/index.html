@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/queries.css">
 
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -32,8 +33,8 @@
   <!-- Rating state start -->
 
   <section class="section-provide-rating">
-    <span>
-      <img src="images/icon-star.svg" alt="A small orange star">
+    <span class="icon">
+      <img src="images/icon-star.svg" alt="A small orange star" class="icon--star" />
     </span>
     <h1 class="heading-primary">
       How did we do?
@@ -59,10 +60,11 @@
 
   <!-- Thank you state start -->
 
-  <section class="section-display-rating" style="display: none;">
-    <img src="images/illustration-thank-you.svg" alt="A bill printed out of a phone, along with a flying credit card">
+  <section class="section-display-rating section--hidden">
+    <img src="images/illustration-thank-you.svg" alt="A bill printed out of a phone, along with a flying credit card"
+      class="icon-credit-card">
     <span class="selected-rating-text">
-      You selected <span class="selected-rating"></span> out of 5
+      You selected 4 out of 5
     </span>
 
     <h1 class="heading-primary">
@@ -77,10 +79,11 @@
 
   <!-- Thank you state end -->
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
