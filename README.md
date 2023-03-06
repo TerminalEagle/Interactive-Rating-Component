@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/TerminalEagle/Interactive-Rating-Component]
-- Live Site URL: [https://terminaleagle.github.io/Interactive-Rating-Component/]
+- Solution URL: [Solution](https://github.com/TerminalEagle/Interactive-Rating-Component)
+- Live Site URL: [Live Site](https://terminaleagle.github.io/Interactive-Rating-Component/)
 
 ## My process
 
